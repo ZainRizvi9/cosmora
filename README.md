@@ -1,16 +1,30 @@
-# React + Vite
+# Cosmora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive 3D solar system explorer built with React and Three.js.
 
-Currently, two official plugins are available:
+**Live:** https://cosmora-mu.vercel.app  
+**Demo:** https://youtu.be/gGv5bNrwf8Y
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What it does
 
-## React Compiler
+Cosmora lets you explore the solar system in real time with free-fly camera navigation. Every planet is texture-mapped using NASA imagery and positioned using Kepler's orbital equations — meaning the planets are where they actually are for any date you pick, past or future.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+You can track the ISS live, view near-Earth asteroids pulled from NASA's NeoWs API, and trigger a K-nearest-neighbours threat classifier that predicts asteroid danger level from size, velocity, and miss distance — built from scratch in vanilla JS with no ML libraries.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Free-fly 3D camera with smooth orbit controls
+- Accurate planetary positions computed from Kepler's laws for any historical or future date
+- Live ISS tracking via wheretheiss.at API
+- Near-Earth asteroid data from NASA NeoWs API
+- KNN threat classifier built in vanilla JS
+- Planetary alignment detection using angular position computation across all 8 planets
+
+## Tech Stack
+
+- React, Three.js, React Three Fiber
+- NASA NeoWs API, wheretheiss.at API
+- Deployed on Vercel
+
+## Running locally
+```bash
