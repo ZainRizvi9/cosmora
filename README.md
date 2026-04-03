@@ -7,7 +7,7 @@ An interactive 3D solar system explorer built with React and Three.js.
 
 ## What it does
 
-Cosmora lets you explore the solar system in real time with free-fly camera navigation. Every planet is texture-mapped using NASA imagery and positioned using Kepler's orbital equations — meaning the planets are where they actually are for any date you pick, past or future.
+Cosmora lets you explore the solar system in real time with free-fly camera navigation. Every planet is texture-mapped using NASA imagery and positioned using Kepler's orbital equations, meaning the planets are where they actually are for any date you pick, past or future.
 
 You can track the ISS live, view near-Earth asteroids pulled from NASA's NeoWs API, and trigger a K-nearest-neighbours threat classifier that predicts asteroid danger level from size, velocity, and miss distance — built from scratch in vanilla JS with no ML libraries.
 
